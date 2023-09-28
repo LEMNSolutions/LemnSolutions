@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Washing Machine Flow Diagram</title>
+    <style>
+        /* Style the boxes */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* Style the arrows */
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            margin: 5px 0;
+            position: absolute;
+        }
+
+        /* Style the arrow for downward flow */
+        .arrow.downward-flow {
+            border-top: 10px solid blue;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Style the container */
+        .container .box:first-child .arrow {
+            display: none; /* Hide the arrow for the first box */
+        }
+    </style>
+</head>
+<body>
+    <!-- Start box -->
+    <div class="container">
+        <div class="box">Start</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Fill box -->
+    <div class="container">
+        <div class="box">Fill Drum with Water</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Heat box -->
+    <div class="container">
+        <div class="box">Heat Water</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Detergent box -->
+    <div class="container">
+        <div class="box">Add Detergent</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Agitate box -->
+    <div class="container">
+        <div class="box">Agitate Drum</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Soak box -->
+    <div class="container">
+        <div class="box">Soak Clothes</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Drain box -->
+    <div class="container">
+        <div class="box">Drain Water</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Rinse box -->
+    <div class="container">
+        <div class="box">Rinse Clothes</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Drain Rinse box -->
+    <div class="container">
+        <div class="box">Drain Rinse Water</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Spin box -->
+    <div class="container">
+        <div class="box">Spin Drum</div>
+        <div class="arrow downward-flow"></div>
+    </div>
+    <!-- Stop box -->
+    <div class="container">
+        <div class="box">Stop</div>
+    </div>
+</body>
+</html>
