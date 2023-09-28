@@ -1,106 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Washing Machine Flow Diagram</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMN Solutions</title>
     <style>
-        /* Style the boxes */
-        .container {
+        body {
+            background-color: #1f3a68; /* Dark blue background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Text color */
+        }
+
+        header {
+            background-color: #1f3a68; /* Header background color */
+            padding: 20px;
             display: flex;
-            flex-direction: column;
             align-items: center;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
             text-align: center;
+            flex-grow: 1; /* Allows the title to take up remaining space */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+        }
+
+        section {
             margin-bottom: 20px;
         }
 
-        .box {
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            height: 50px;
-            line-height: 50px;
-            margin-bottom: 20px;
-            position: relative;
+        h2 {
+            font-size: 24px;
         }
 
-        /* Style the arrows */
-        .arrow {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            margin: 5px 0;
-            position: absolute;
-        }
-
-        /* Style the arrow for downward flow */
-        .arrow.downward-flow {
-            border-top: 10px solid blue;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Style the container */
-        .container .box:first-child .arrow {
-            display: none; /* Hide the arrow for the first box */
+        p {
+            font-size: 18px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <!-- Start box -->
-    <div class="container">
-        <div class="box">Start</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Fill box -->
-    <div class="container">
-        <div class="box">Fill Drum with Water</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Heat box -->
-    <div class="container">
-        <div class="box">Heat Water</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Detergent box -->
-    <div class="container">
-        <div class="box">Add Detergent</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Agitate box -->
-    <div class="container">
-        <div class="box">Agitate Drum</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Soak box -->
-    <div class="container">
-        <div class="box">Soak Clothes</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Drain box -->
-    <div class="container">
-        <div class="box">Drain Water</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Rinse box -->
-    <div class="container">
-        <div class="box">Rinse Clothes</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Drain Rinse box -->
-    <div class="container">
-        <div class="box">Drain Rinse Water</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Spin box -->
-    <div class="container">
-        <div class="box">Spin Drum</div>
-        <div class="arrow downward-flow"></div>
-    </div>
-    <!-- Stop box -->
-    <div class="container">
-        <div class="box">Stop</div>
-    </div>
+    <header>
+        <img class="logo" src="your-logo.png" alt="Logo"> <!-- Replace 'your-logo.png' with your actual logo file -->
+        <h1>LEMN Solutions</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Om os</h2>
+            <p>LEMN Solutions er resultatet af anstrengelserne fra fire ambitiøse og innovative studerende inden for elektrisk ingeniørvidenskab fra DTU (Danmarks Tekniske Universitet). Med en fælles lidenskab for teknologi og automatisering begav vi os ud på en rejse for at etablere dette selskab med visionen om at revolutionere kommercielle aktiviteter gennem avancerede tekniske løsninger</p>
+        </section>
+
+        <section>
+            <h2>Hvad vi laver</h2>
+            <p>Hos LEMN Solutions er vi eksperter i at levere avancerede automatiseringsløsninger. Med vores dedikerede team af ingeniører og teknikere har vi ekspertisen til at designe og implementere automatiseringssystemer, der optimerer processer og forbedrer effektiviteten i din virksomhed. Vores skræddersyede løsninger sikrer, at teknologien passer perfekt til dine forretningsmål. Uanset om du har brug for automatisering til produktion, logistik eller andre industrier, kan du stole på LEMN Solutions for innovative og pålidelige løsninger, der opfylder dine behov</p>
+        </section>
+
+        <section>
+            <h2>Kontakt os</h2>
+            <p>Kom i kontakt med os <a href="mailto:L.e.m.n.solutions@gmail.com">L.e.m.n.solutions@gmail.com</a>.</p>
+        </section>
+    </main>
 </body>
 </html>
