@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light Gray */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-box {
+    background-color: white; /* Light Gray */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+h1 {
+    margin: 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #f0f0f0; /* Light Gray */
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.body-section {
+    padding: 20px;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto; /* Center the slider */
+}
+
+.slides {
+    width: 300%; /* Adjust the width based on the number of slides */
+    height: 500px;
+    display: flex;
+    animation: slide 15s linear infinite; /* Adjust the duration based on your requirements */
+}
+
+.slide {
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 33.333%; /* Adjust the width based on the number of slides */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Additional styles for manual slide navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: blue;
+}
+
+#radio1:checked~.first {
+    transform: translateX(0);
+}
+
+#radio2:checked~.first {
+    transform: translateX(-33.333%); /* Adjust the percentage based on the number of slides */
+}
+
+#radio3:checked~.first {
+    transform: translateX(-66.666%); /* Adjust the percentage based on the number of slides */
+}
+
+#radio1:checked~.first,
+#radio2:checked~.first,
+#radio3:checked~.first {
+    animation: none; /* Stop the automatic sliding when a button is pressed */
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+}
+
+.footer-box {
+    background-color: #333; /* Dark Gray for the footer background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
